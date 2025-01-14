@@ -4,4 +4,4 @@ metadata:
   name: spring-config
 data:
   # kv format
-  SPRING_PROFILES_ACTIVE: "local"
+  SPRING_PROFILES_ACTIVE: local
