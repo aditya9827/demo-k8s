@@ -20,7 +20,7 @@ spec:
           image: aditya9827/demo:1.0.0
           envFrom:
             - configMapRef:
-                name: demo-config
+                name: spring-config
           imagePullPolicy: IfNotPresent
           ports:
             - name: http

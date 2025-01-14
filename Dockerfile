@@ -13,4 +13,4 @@ COPY --from=build /app/spring-boot-loader/ /app/sb-loader/
 COPY --from=build /app/snapshot-dependencies/ /app/snapshots/
 COPY --from=build /app/target/demo.jar /app/
 
-CMD ["java", "-jar", "/app/demo.jar"]
+CMD ["java", "-Dspring.profiles.active=${SPRING_PROFILES_ACTIVE}", "-jar", "/app/demo.jar"]

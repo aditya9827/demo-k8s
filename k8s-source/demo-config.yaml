@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: demo-config
+  name: spring-config
 data:
   # kv format
-  -Dspring.profiles.active: "local"
+  SPRING_PROFILES_ACTIVE: "local"
